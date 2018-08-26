@@ -8,7 +8,7 @@ This shows you what you need to make this little project.
 
 ### Prerequisites
 
-* [Arduino Software] (https://www.arduino.cc/en/Main/Software)
+* ["Arduino Software"](https://www.arduino.cc/en/Main/Software)
 * Arduino MEGA 2560 or UNO (it's recommanded to begin with Arduino)
 * USB cable Type-A to Type-B (often called printer cable)
 * 1 mini breadboard
@@ -38,7 +38,9 @@ You may want to test the Arduino. We'll test it by blinking the built-in **L** L
 Example ---> 01.Basics ---> Blink
 ```
 Finally, you have to upload the data to the Arduino, by clicking the arrow button.
-<img src="upload_arduino" align="left />
+
+<img src="upload_arduino.png" align="left />
+
 The uploading is done when you see "Done uploading".
 If the LED start blinking in orange you are ready to test other programs.
 
@@ -51,6 +53,7 @@ Open mini_proximity_sensor.ino.
 ### Setup the Arduino
 
 Just Follow the branchings below.
+
 <img src="mini_proximity_sensor.png" align="left" />
 
 ### Enjoy!
