@@ -56,7 +56,7 @@ Open mini_proximity_sensor.ino.
 
 Just Follow the branchings below.
 
-<img src="mini_proximity_sensor_sketch.png" align="left" />
+<img src="mini_proximity_sensor_sketch.png" />
 
 ### Enjoy!
 
