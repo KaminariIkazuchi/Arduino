@@ -42,7 +42,6 @@ Finally, you have to upload the data to the Arduino, by clicking the arrow butto
 The uploading is done when you see "Done uploading".
 If the LED start blinking in orange you are ready to test other programs.
 
-```
 To stop the program just create a program which only contains the functions **setup()** and **loop()** and upload it to the Arduino.
 
 ## Mini Proximity Sensor
