@@ -1,6 +1,8 @@
-# mini_proximity_sensor
+# Mini Proximity Sensor
 
-That's my first project on Arduino, a mini proximity sensor that turns a led on when an object is close to ten centimeters from the ultrasonic sensor
+That's my first project on Arduino, a mini proximity sensor that turns a led on when an object is close to ten centimeters from the ultrasonic sensor.
+
+This project will have some improvements in the future.
 
 ## Getting Started
 
@@ -8,8 +10,8 @@ This shows you what you need to make this little project.
 
 ### Prerequisites
 
-* ["Arduino Software"](https://www.arduino.cc/en/Main/Software)
-* Arduino MEGA 2560 or UNO (it's recommanded to begin with Arduino)
+* [Arduino Software](https://www.arduino.cc/en/Main/Software)
+* Arduino MEGA 2560 (it's recommanded to begin with Arduino)
 * USB cable Type-A to Type-B (often called printer cable)
 * 1 mini breadboard
 * 6 wires
@@ -23,7 +25,7 @@ You just need to install the Arduino Software
 
 ### How to use the Arduino
 
-Take a look to the [Arduino Getting Started], if you don't want to, the steps are written below.
+Take a look to the [Arduino Getting Started](https://www.arduino.cc/en/Guide/ArduinoMega2560), if you don't want to, the steps are written below.
 
 First, you have to launch the Arduino software and connect the Arduino to the computer using the USB A/B cable and atfer that you have to make sure that you selected the right board.
 ```
@@ -39,7 +41,7 @@ Example ---> 01.Basics ---> Blink
 ```
 Finally, you have to upload the data to the Arduino, by clicking the arrow button.
 
-<img src="upload_arduino.png" align="left />
+<img src="upload_arduino.png" align="left" />
 
 The uploading is done when you see "Done uploading".
 If the LED start blinking in orange you are ready to test other programs.
@@ -54,7 +56,7 @@ Open mini_proximity_sensor.ino.
 
 Just Follow the branchings below.
 
-<img src="mini_proximity_sensor.png" align="left" />
+<img src="mini_proximity_sensor_sketch.png" align="left" />
 
 ### Enjoy!
 
