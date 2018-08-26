@@ -41,7 +41,7 @@ Example ---> 01.Basics ---> Blink
 ```
 Finally, you have to upload the data to the Arduino, by clicking the arrow button.
 
-<img src="upload_arduino.png" align="left" />
+<img src="upload_arduino.PNG" align="left" />
 
 The uploading is done when you see "Done uploading".
 If the LED start blinking in orange you are ready to test other programs.
