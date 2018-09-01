@@ -1,6 +1,6 @@
 # Mini Proximity Sensor
 
-That's my first project on Arduino, a mini proximity sensor that turns a led on when an object is close to ten centimeters from the ultrasonic sensor.
+That's my first project on Arduino, a mini proximity sensor that turns the green led on when an object is 30 centimeters close or less from the ultrasonic sensor, if the object is 24 centimeters close the green LED will blink. Below 20 centimeters it's the yellow LED that turns on and below 14 centimeters it will blink. I let you guess what's happens when the object is 10 centimeters close.
 
 This project will have some improvements in the future.
 
@@ -14,9 +14,10 @@ This shows you what you need to make this little project.
 * Arduino MEGA 2560 (it's recommanded to begin with Arduino)
 * USB cable Type-A to Type-B (often called printer cable)
 * 1 mini breadboard
-* 6 wires
+* 10 wires
 * 1 green LED
-* 1 resistance
+* 1 yellow LED
+* 1 red LED
 * 1 ultrasonic sensor HC-SR04
 
 ### Installing
@@ -61,16 +62,28 @@ Just Follow the branchings below.
 ### Enjoy!
 
 Upload the program to the Arduino and test it by approaching an object near the sensor.
-If you want to modify the distance to light up the LED go to
+If you want to modify the distance to light up the LED go to the 3 functions that turns the LEDs on, by example the function for the green led is g_led() is this one:
 ```C++
-void led(float distance)
+void g_led(float distance)
 {
-  if (distance <= 10)
-    digitalWrite(led_green, HIGH);
-  else
-    digitalWrite(led_green, LOW);
+    if (distance > 30) {
+      digitalWrite(green_led, LOW);
+      digitalWrite(yellow_led, LOW);
+      digitalWrite(red_led, LOW);
+      
+  } else if (distance <= 30 && distance > 24) {
+      digitalWrite(green_led, HIGH);
+      digitalWrite(yellow_led, LOW);
+      digitalWrite(red_led, LOW);
+  } else if (distance <= 24 && distance > 20) {
+      digitalWrite(green_led, HIGH);
+      delay(80);
+      digitalWrite(green_led, LOW);
+      delay(80);
+  }
 }
 ```
-and modify the **10** by any value you want.
+
+I let you play with the code. If you find some improvements to do with my code or on the arduino branchings you can do a push request.
 
 Thank for reading this readme.
